@@ -80,7 +80,11 @@ dojo = {
 }
 
 def print_info(list):
-    for i in list:
+    for key,val in list.items():
+        print("-----------------")
+        print(f"{len(val)} {key.upper()}")
+        for i in range(0, len(val)):
+            print(val[i])
         
         #print(i)//prints keys
         #print(list[i])//prints items
